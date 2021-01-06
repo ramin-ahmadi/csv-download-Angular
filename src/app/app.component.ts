@@ -10,9 +10,9 @@ export class AppComponent  {
 
   name = 'Angular 11';
   status: any[];
-  formula:string = "Formula 1";
+  formula:string = "Order history";
   downloadCSV() {
-    this.status = ["Placed", "rejected", "pending"];
+    this.status = ["Placed", "Rejected", "Pending"];
     var data = [
       {
         order: "0000490136",
@@ -31,7 +31,7 @@ export class AppComponent  {
       {
         order: '0000490119',
         date: 'December 15, 2020',
-        po: 12121212121212121212212,
+        po: '1212121212',
         status: this.status[2],
         total: "$156.79"
       },
